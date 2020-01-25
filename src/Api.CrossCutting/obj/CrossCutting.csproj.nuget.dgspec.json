@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\silas\\Documents\\API - Treino\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj": {}
+    "C:\\Users\\silas\\Documents\\API - Treino\\aspnetcore-api-ddd\\src\\Api.CrossCutting\\CrossCutting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\silas\\Documents\\API - Treino\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj": {
+    "C:\\Users\\silas\\Documents\\API - Treino\\aspnetcore-api-ddd\\src\\Api.CrossCutting\\CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\silas\\Documents\\API - Treino\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj",
+        "projectUniqueName": "C:\\Users\\silas\\Documents\\API - Treino\\aspnetcore-api-ddd\\src\\Api.CrossCutting\\CrossCutting.csproj",
         "projectName": "CrossCutting",
-        "projectPath": "C:\\Users\\silas\\Documents\\API - Treino\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj",
+        "projectPath": "C:\\Users\\silas\\Documents\\API - Treino\\aspnetcore-api-ddd\\src\\Api.CrossCutting\\CrossCutting.csproj",
         "packagesPath": "C:\\Users\\silas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\silas\\Documents\\API - Treino\\curso_api_netcore\\src\\Api.CrossCutting\\obj\\",
+        "outputPath": "C:\\Users\\silas\\Documents\\API - Treino\\aspnetcore-api-ddd\\src\\Api.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

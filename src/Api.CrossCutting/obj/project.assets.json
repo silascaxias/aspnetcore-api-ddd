@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\silas\\Documents\\API - Treino\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj",
+      "projectUniqueName": "c:\\Users\\silas\\Documents\\API - Treino\\aspnetcore-api-ddd\\src\\Api.CrossCutting\\CrossCutting.csproj",
       "projectName": "CrossCutting",
-      "projectPath": "C:\\Users\\silas\\Documents\\API - Treino\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj",
+      "projectPath": "c:\\Users\\silas\\Documents\\API - Treino\\aspnetcore-api-ddd\\src\\Api.CrossCutting\\CrossCutting.csproj",
       "packagesPath": "C:\\Users\\silas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\silas\\Documents\\API - Treino\\curso_api_netcore\\src\\Api.CrossCutting\\obj\\",
+      "outputPath": "c:\\Users\\silas\\Documents\\API - Treino\\aspnetcore-api-ddd\\src\\Api.CrossCutting\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

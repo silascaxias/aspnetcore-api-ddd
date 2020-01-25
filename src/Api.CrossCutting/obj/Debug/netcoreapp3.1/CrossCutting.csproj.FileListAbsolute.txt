@@ -6,3 +6,11 @@ C:\Users\silas\Documents\API - Treino\curso_api_netcore\src\Api.CrossCutting\obj
 C:\Users\silas\Documents\API - Treino\curso_api_netcore\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.AssemblyInfo.cs
 C:\Users\silas\Documents\API - Treino\curso_api_netcore\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.dll
 C:\Users\silas\Documents\API - Treino\curso_api_netcore\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.pdb
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\CrossCutting.deps.json
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\CrossCutting.dll
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\CrossCutting.pdb
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.csprojAssemblyReference.cache
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.AssemblyInfoInputs.cache
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.AssemblyInfo.cs
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.dll
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.pdb

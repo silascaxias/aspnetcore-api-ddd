@@ -6,3 +6,11 @@ C:\Users\silas\Documents\API - Treino\curso_api_netcore\src\Api.Domain\obj\Debug
 C:\Users\silas\Documents\API - Treino\curso_api_netcore\src\Api.Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfo.cs
 C:\Users\silas\Documents\API - Treino\curso_api_netcore\src\Api.Domain\obj\Debug\netcoreapp3.1\Domain.dll
 C:\Users\silas\Documents\API - Treino\curso_api_netcore\src\Api.Domain\obj\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Domain\bin\Debug\netcoreapp3.1\Domain.deps.json
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Domain\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Domain\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Domain\obj\Debug\netcoreapp3.1\Domain.csprojAssemblyReference.cache
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfoInputs.cache
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfo.cs
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Domain\obj\Debug\netcoreapp3.1\Domain.dll
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Domain\obj\Debug\netcoreapp3.1\Domain.pdb

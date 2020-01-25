@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\silas\\Documents\\API - Treino\\curso_api_netcore\\src\\Api.Data\\Data.csproj": {}
+    "C:\\Users\\silas\\Documents\\API - Treino\\aspnetcore-api-ddd\\src\\Api.Data\\Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\silas\\Documents\\API - Treino\\curso_api_netcore\\src\\Api.Data\\Data.csproj": {
+    "C:\\Users\\silas\\Documents\\API - Treino\\aspnetcore-api-ddd\\src\\Api.Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\silas\\Documents\\API - Treino\\curso_api_netcore\\src\\Api.Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\silas\\Documents\\API - Treino\\aspnetcore-api-ddd\\src\\Api.Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\silas\\Documents\\API - Treino\\curso_api_netcore\\src\\Api.Data\\Data.csproj",
+        "projectPath": "C:\\Users\\silas\\Documents\\API - Treino\\aspnetcore-api-ddd\\src\\Api.Data\\Data.csproj",
         "packagesPath": "C:\\Users\\silas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\silas\\Documents\\API - Treino\\curso_api_netcore\\src\\Api.Data\\obj\\",
+        "outputPath": "C:\\Users\\silas\\Documents\\API - Treino\\aspnetcore-api-ddd\\src\\Api.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -40,6 +40,24 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

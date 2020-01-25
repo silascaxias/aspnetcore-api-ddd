@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\silas\\Documents\\API - Treino\\curso_api_netcore\\src\\Api.Application\\Application.csproj",
+      "projectUniqueName": "c:\\Users\\silas\\Documents\\API - Treino\\aspnetcore-api-ddd\\src\\Api.Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\silas\\Documents\\API - Treino\\curso_api_netcore\\src\\Api.Application\\Application.csproj",
+      "projectPath": "c:\\Users\\silas\\Documents\\API - Treino\\aspnetcore-api-ddd\\src\\Api.Application\\Application.csproj",
       "packagesPath": "C:\\Users\\silas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\silas\\Documents\\API - Treino\\curso_api_netcore\\src\\Api.Application\\obj\\",
+      "outputPath": "c:\\Users\\silas\\Documents\\API - Treino\\aspnetcore-api-ddd\\src\\Api.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
