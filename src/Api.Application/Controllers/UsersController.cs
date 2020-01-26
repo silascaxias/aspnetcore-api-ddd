@@ -33,7 +33,7 @@ namespace Api.Application.Controllers
         }
 
         [HttpGet]
-        [Route("{id}", Name = "GetById")]
+        [Route("{id}")]
         public async Task<ActionResult> Get(Guid id)
         {
             try
@@ -88,12 +88,30 @@ namespace Api.Application.Controllers
                     return Conflict(false.AsConflictResponse("E-mail já cadastrado."));
                 }
 
-                var result = await service.Put(user);
-
-                if (result == null) {
+                if ( await service.Put(user) == null) {
                     return BadRequest();                   
                 }
                 return Ok(true.AsSuccessResponse("Usuário alterado com sucesso."));
+            }
+            catch (ArgumentException e)
+            {                
+                return StatusCode ((int) HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
+
+        [HttpDelete]
+        [Route("{id}")]
+        public async Task<ActionResult> Delete(Guid id)
+        {
+            try
+            {
+                if(!await service.Exist(id)) {
+                    return NotFound(false.AsNotFoundResponse("Usuário não encontrado."));
+                }
+                if(await service.Delete(id)) {
+                    return Ok(true.AsSuccessResponse("Usuário deletado com sucesso.")); 
+                }    
+                return BadRequest();                
             }
             catch (ArgumentException e)
             {                
