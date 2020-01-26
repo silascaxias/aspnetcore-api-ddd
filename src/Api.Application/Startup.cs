@@ -21,7 +21,7 @@ namespace Application
         public void ConfigureServices(IServiceCollection services)
         {            
             ConfigureService.ConfigureDependenciesService(services);
-            ConfigureRepository.ConfigureDependenciesRepository(services);
+            ConfigureRepository.ConfigureDependenciesRepository(services, Configuration);
 
             services.AddSwaggerGen( c => {
                 c.SwaggerDoc ("v1",
