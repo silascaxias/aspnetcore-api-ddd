@@ -10,8 +10,14 @@ namespace Api.Application.Controllers
     [Route("api/[controller]")]
     public class UsersController : ControllerBase
     {
+        private IUserService service;
+        public UsersController(IUserService service)
+        {
+            this.service = service;
+        }
+
         [HttpGet]
-        public async Task<ActionResult> GetAll([FromServices] IUserService service)
+        public async Task<ActionResult> GetAll()
         {
             try
             {

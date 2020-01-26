@@ -52,3 +52,5 @@ C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin
 C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin\Debug\netcoreapp3.1\CrossCutting.pdb
 C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin\Debug\netcoreapp3.1\Data.pdb
 C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\obj\Debug\netcoreapp3.1\Application.csproj.CopyComplete
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
