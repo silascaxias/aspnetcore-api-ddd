@@ -508,6 +508,11 @@
         }
       },
       "CrossCutting/1.0.0": {
+        "dependencies": {
+          "Data": "1.0.0",
+          "Domain": "1.0.0",
+          "Service": "1.0.0"
+        },
         "runtime": {
           "CrossCutting.dll": {}
         },
@@ -537,7 +542,6 @@
       },
       "Service/1.0.0": {
         "dependencies": {
-          "CrossCutting": "1.0.0",
           "Data": "1.0.0",
           "Domain": "1.0.0"
         },

@@ -14,10 +14,8 @@ C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Service\obj\Deb
 C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfo.cs
 C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Service\obj\Debug\netcoreapp3.1\Service.dll
 C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Service\obj\Debug\netcoreapp3.1\Service.pdb
-C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Service\bin\Debug\netcoreapp3.1\CrossCutting.dll
 C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Service\bin\Debug\netcoreapp3.1\Data.dll
 C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Service\bin\Debug\netcoreapp3.1\Domain.dll
 C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Service\bin\Debug\netcoreapp3.1\Domain.pdb
 C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Service\bin\Debug\netcoreapp3.1\Data.pdb
-C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Service\bin\Debug\netcoreapp3.1\CrossCutting.pdb
 C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Service\obj\Debug\netcoreapp3.1\Service.csproj.CopyComplete

@@ -14,3 +14,10 @@ C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.CrossCutting\ob
 C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.AssemblyInfo.cs
 C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.dll
 C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.pdb
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\Data.dll
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\Service.dll
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\Service.pdb
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\Data.pdb
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrossCutting.csproj.CopyComplete
