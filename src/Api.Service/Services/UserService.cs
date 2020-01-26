@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Api.Domain.Entities;
 using Api.Domain.Interfaces;
@@ -19,6 +20,11 @@ namespace Api.Service.Services
             return await repository.DeleteAsync(id);
         }
 
+        public async Task<bool> Exist(Guid id)
+        {
+            return await repository.ExistAsync(id);
+        }
+
         public async Task<UserEntity> Get(Guid id)
         {
             return await repository.SelectAsync(id);
@@ -27,6 +33,16 @@ namespace Api.Service.Services
         public async Task<IEnumerable<UserEntity>> GetAll()
         {
             return await repository.SelectAsync();
+        }
+
+        public async Task<bool> IsValidEmail(string email, Guid userId)
+        {
+            var user = await repository.SelectAsync(userId);
+            if(user.Email == email) {
+                return true;
+            }
+            var users = await repository.SelectAsync();
+            return users.Where(x => x.Email.Equals(email)).Count() == 0;
         }
 
         public async Task<UserEntity> Post(UserEntity user)
