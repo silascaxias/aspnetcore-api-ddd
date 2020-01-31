@@ -86,3 +86,12 @@ C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin
 C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll

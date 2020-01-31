@@ -8,9 +8,9 @@ namespace Api.Data.Context
         public MyContext CreateDbContext(string[] args)
         {
             // Using to create Migrations
-            var connectionString = "Server=localhost;Port=3306;Database=APIDatabase;Uid=root;Pwd=root";
+            var connectionString = "Server=.\\SQLEXPRESS2020;Database=APIDatabase;Uid=sa;Pwd=root";
             var optionBuilder = new DbContextOptionsBuilder<MyContext> ();
-            optionBuilder.UseMySql (connectionString);
+            optionBuilder.UseSqlServer (connectionString);
             return new MyContext (optionBuilder.Options);
         }
     }
