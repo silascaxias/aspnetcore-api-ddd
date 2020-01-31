@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Api.Application.Controllers
 {
     [Route("api/[controller]")]
-    public class UsersController : BaseController
+    public class UsersController: BaseController
     {
         private IUserService service;
         public UsersController(IUserService service)
@@ -65,7 +65,7 @@ namespace Api.Application.Controllers
                 }
                 return Ok(true.AsSuccessResponse("Usuário registrado com sucesso."));
             }
-             catch (ArgumentException e)
+            catch (ArgumentException e)
             {                
                 return StatusCode ((int) HttpStatusCode.InternalServerError, e.Message);
             }

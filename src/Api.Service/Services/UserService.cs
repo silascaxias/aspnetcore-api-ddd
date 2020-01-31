@@ -38,8 +38,8 @@ namespace Api.Service.Services
         public async Task<bool> IsValidEmail(string email, Guid userId)
         {
             var user = await repository.SelectAsync(userId);
-            if(user.Email == email) {
-                return true;
+            if(user != null) {
+                return user.Email == email;
             }
             var users = await repository.SelectAsync();
             return users.Where(x => x.Email.Equals(email)).Count() == 0;

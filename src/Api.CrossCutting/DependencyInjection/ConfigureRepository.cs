@@ -4,6 +4,8 @@ using Api.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
+using Api.Domain.Repository;
+using Api.Data.Implementations;
 
 namespace Api.CrossCutting.DependencyInjection
 {
@@ -12,6 +14,8 @@ namespace Api.CrossCutting.DependencyInjection
         public static void ConfigureDependenciesRepository(IServiceCollection services, IConfiguration configuration)
         {
             services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
+            services.AddScoped<IUserRepository, UserImplementation>();
+
             services.AddDbContext<MyContext> (
                 options => options.UseSqlServer(configuration.GetConnectionString("Default"))
             );
