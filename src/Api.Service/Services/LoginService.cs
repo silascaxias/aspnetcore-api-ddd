@@ -56,7 +56,11 @@ namespace Api.Service.Services
 
                 }
             }
-            return null;
+            return new
+            {
+                authenticated = false,
+                message = "Authentication failed."
+            };
         }
         private object SuccessObject(string email)
         {
