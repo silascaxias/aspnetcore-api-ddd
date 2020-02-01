@@ -1,6 +1,6 @@
 # aspnetcore-api-ddd
 
-Foobar is a Python library for dealing with word pluralization.
+Projeto simples de web API em ASP.NET Core aplicando conceitos da estrutura DDD.
 
 ## Drescição do Projeto
 
