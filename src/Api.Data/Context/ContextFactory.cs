@@ -1,17 +1,22 @@
+using System.IO;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.Extensions.Configuration;
 
 namespace Api.Data.Context
 {
     public class ContextFactory : IDesignTimeDbContextFactory<MyContext>
+{
+    public MyContext CreateDbContext(string[] args)
     {
-        public MyContext CreateDbContext(string[] args)
-        {
-            // Using to create Migrations
-            var connectionString = "Server=.\\SQLEXPRESS2020;Database=APIDatabase;Uid=sa;Pwd=root";
-            var optionBuilder = new DbContextOptionsBuilder<MyContext> ();
-            optionBuilder.UseSqlServer (connectionString);
-            return new MyContext (optionBuilder.Options);
-        }
+        IConfiguration configuration = new ConfigurationBuilder()
+            .SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "../Api.Application"))
+            .AddJsonFile("appsettings.json")
+            .Build();
+            
+        var builder = new DbContextOptionsBuilder<MyContext>();
+        builder.UseSqlServer(configuration.GetConnectionString("Default"));
+        return new MyContext(builder.Options);
     }
+}
 }

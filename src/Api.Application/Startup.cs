@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Authorization;
 using System.Linq;
 using System.Collections.Generic;
 using Microsoft.OpenApi.Models;
+using Api.Domain.Model;
 
 namespace Application
 {

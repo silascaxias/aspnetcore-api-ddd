@@ -15,11 +15,10 @@ namespace Api.CrossCutting.DependencyInjection
         {
             services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
             services.AddScoped<IUserRepository, UserImplementation>();
-
+            
             services.AddDbContext<MyContext> (
                 options => options.UseSqlServer(configuration.GetConnectionString("Default"))
             );
-
         }
     }
 }
