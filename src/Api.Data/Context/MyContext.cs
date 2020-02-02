@@ -13,7 +13,7 @@ namespace Api.Data.Context
         public DbSet<UserEntity> Users { get; set; }
 
         public MyContext (DbContextOptions<MyContext> options) : base (options) {
-            Database.Migrate();
+             
         } 
 
         protected override void OnModelCreating (ModelBuilder modelBuilder) 

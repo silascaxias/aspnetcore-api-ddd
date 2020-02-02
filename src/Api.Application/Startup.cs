@@ -10,10 +10,10 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
-using System.Linq;
 using System.Collections.Generic;
 using Microsoft.OpenApi.Models;
-using Api.Domain.Model;
+using Api.CrossCutting.Mappings;
+using AutoMapper;
 
 namespace Application
 {
@@ -30,6 +30,18 @@ namespace Application
         {            
             ConfigureService.ConfigureDependenciesService(services);
             ConfigureRepository.ConfigureDependenciesRepository(services, Configuration);
+
+            // Setup AutoMapper e dependency injection
+            
+            var config = new AutoMapper.MapperConfiguration(cfg => 
+            {
+                cfg.AddProfile(new DtoToModelProfile());
+                cfg.AddProfile(new EntityToDtoProfile());
+                cfg.AddProfile(new ModelToEntityProfile());
+            });
+
+            IMapper mapper = config.CreateMapper();
+            services.AddSingleton(mapper);
 
             var signingConfigurations = new SigningConfigurations();
             services.AddSingleton(signingConfigurations);
