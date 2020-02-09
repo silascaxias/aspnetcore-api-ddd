@@ -9,5 +9,6 @@ namespace Api.Domain.Entities
         public string Name { get; set; }
         [StringLength(60, ErrorMessage = "Email precisa ser menor que 60 carácteres.")]
         public string Email { get; set; }
+        public string Password { get; set; }
     }
 }

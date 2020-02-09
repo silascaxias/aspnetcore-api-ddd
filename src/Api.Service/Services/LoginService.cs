@@ -32,29 +32,18 @@ namespace Api.Service.Services
             this.configuration = configuration;
         }
 
-        public async Task<object> FindByLogin(LoginDto user)
+        public async Task<object> Authenticate(LoginDto user)
         {
             var baseUser = new UserEntity();
-
-
-            if (user != null && !string.IsNullOrWhiteSpace(user.Email))
+            
+            if (user != null && !string.IsNullOrWhiteSpace(user.Email) && !string.IsNullOrWhiteSpace(user.Password))
             {
                 baseUser = await repository.FindByLogin(user.Email);
 
-                if (baseUser == null)
+                if(baseUser != null && baseUser.Password == user.Password) 
                 {
-                    return new
-                    {
-                        authenticated = false,
-                        message = "Authentication failed."
-                    };
-                }
-                else
-                {
-
                     return SuccessObject(user.Email);
-
-                }
+                }          
             }
             return new
             {
