@@ -17,7 +17,7 @@ namespace Api.CrossCutting.DependencyInjection
             services.AddScoped<IUserRepository, UserImplementation>();
             
             services.AddDbContext<MyContext> (
-                options => options.UseSqlServer(configuration.GetConnectionString("Default"))
+                options => options.UseMySql(configuration.GetConnectionString("Default"))
             );
         }
     }
