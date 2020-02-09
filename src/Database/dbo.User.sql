@@ -1,24 +1,10 @@
-USE [APIDatabase]
-GO
-
-/****** Object:  Table [dbo].[User]    Script Date: 2/8/2020 10:02:54 PM ******/
-SET ANSI_NULLS ON
-GO
-
-SET QUOTED_IDENTIFIER ON
-GO
-
-CREATE TABLE [dbo].[User](
-	[Id] [uniqueidentifier] NOT NULL,
-	[CreateAt] [datetime2](7) NULL,
-	[UpdateAt] [datetime2](7) NULL,
-	[Name] [nvarchar](60) NOT NULL,
-	[Email] [nvarchar](100) NULL,
-	[Password] [nvarchar](20) NOT NULL,
- CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED 
-(
-	[Id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY]
-GO
-
+CREATE TABLE `user` (
+  `Id` char(36) NOT NULL,
+  `CreateAt` datetime(6) DEFAULT NULL,
+  `UpdateAt` datetime(6) DEFAULT NULL,
+  `Name` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `Email` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `Password` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  PRIMARY KEY (`Id`),
+  UNIQUE KEY `IX_User_Email` (`Email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
