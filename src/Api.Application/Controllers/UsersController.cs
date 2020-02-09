@@ -4,8 +4,11 @@ using System.Threading.Tasks;
 using Api.Application.Controllers.Base;
 using Api.Application.Controllers.Extensions;
 using Api.Application.ViewModels.Response;
+using Api.Domain.Dtos;
+using Api.Domain.Dtos.User;
 using Api.Domain.Entities;
 using Api.Domain.Interfaces.Services.User;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Application.Controllers
@@ -19,6 +22,7 @@ namespace Api.Application.Controllers
             this.service = service;
         }
 
+        [Authorize("Bearer")]
         [HttpGet]
         public async Task<ActionResult> GetAll()
         {
@@ -32,13 +36,18 @@ namespace Api.Application.Controllers
             }
         }
 
+        [Authorize("Bearer")]
         [HttpGet]
         [Route("{id}")]
         public async Task<ActionResult> Get(Guid id)
         {
             try
             {
-                return Ok(await service.Get(id));
+                var result = await service.Get(id);
+                if(result == null) {
+                    return NotFound(false.AsNotFoundResponse("Usuário não encontrado."));
+                }
+                return Ok(result);
             }
             catch (ArgumentException e)
             {                
@@ -46,8 +55,9 @@ namespace Api.Application.Controllers
             }
         }
         
+        [AllowAnonymous]
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] UserEntity user)
+        public async Task<ActionResult> Post([FromBody] UserDtoCreate user)
         {
             try
             {
@@ -56,7 +66,7 @@ namespace Api.Application.Controllers
                     return UnprocessableEntity(false.AsUnprocessableResponse("Por favor entre com um e-mail válido."));
                 }
                 
-                if(!await service.IsValidEmail(user.Email, user.Id)) {
+                if(!await service.IsValidEmail(user.Email, Guid.Empty)) {
                     return Conflict(false.AsConflictResponse("E-mail já cadastrado."));
                 }
 
@@ -71,8 +81,9 @@ namespace Api.Application.Controllers
             }
         }
         
+        [Authorize("Bearer")]
         [HttpPut]
-        public async Task<ActionResult> Put([FromBody] UserEntity user)
+        public async Task<ActionResult> Put([FromBody] UserDtoUpdate user)
         {
             try
             {
@@ -99,6 +110,7 @@ namespace Api.Application.Controllers
             }
         }
 
+        [Authorize("Bearer")]
         [HttpDelete]
         [Route("{id}")]
         public async Task<ActionResult> Delete(Guid id)

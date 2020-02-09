@@ -5,10 +5,12 @@ using Api.Application.Controllers.Base;
 using Api.Application.ViewModels.Response;
 using Api.Domain.Dtos;
 using Api.Domain.Interfaces.Services.User;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Application.Controllers
 {
+    [AllowAnonymous]
     [Route("api/[controller]")]
     public class LoginController: BaseController
     {
@@ -22,12 +24,12 @@ namespace Api.Application.Controllers
             
             try
             {
-                var result = await services.FindByLogin(loginDto);
+                var result = await services.Authenticate(loginDto);
 
                 if(result != null) {
                     return result;
                 }
-                return NotFound();
+                return BadRequest(false.AsBadRequestResponse("Email ou senha incorretos."));
             }
             catch (ArgumentException e)
             {                

@@ -95,3 +95,6 @@ C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin
 C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
 C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\silas\Documents\API - Treino\aspnetcore-api-ddd\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
