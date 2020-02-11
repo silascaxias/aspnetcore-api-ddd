@@ -25,11 +25,7 @@ namespace Api.Application.Controllers
             try
             {
                 var result = await services.Authenticate(loginDto);
-
-                if(result != null) {
-                    return result;
-                }
-                return BadRequest(false.AsBadRequestResponse("Email ou senha incorretos."));
+                return result;
             }
             catch (ArgumentException e)
             {                

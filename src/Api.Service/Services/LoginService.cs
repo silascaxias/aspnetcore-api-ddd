@@ -39,16 +39,32 @@ namespace Api.Service.Services
             if (user != null && !string.IsNullOrWhiteSpace(user.Email) && !string.IsNullOrWhiteSpace(user.Password))
             {
                 baseUser = await repository.FindByLogin(user.Email);
+                
 
                 if(baseUser != null && baseUser.Password == user.Password) 
                 {
                     return SuccessObject(user.Email);
                 }          
+
+                if(baseUser == null) {
+                    return new
+                    {
+                        authenticated = false,
+                        message = "E-mail não encontrado."
+                    };
+                }
+                if(baseUser.Password != user.Password) {
+                    return new
+                    {
+                        authenticated = false,
+                        message = "Senha incorreta."
+                    };
+                }
             }
             return new
             {
                 authenticated = false,
-                message = "Authentication failed."
+                message = "Authentication failed. "
             };
         }
         private object SuccessObject(string email)
